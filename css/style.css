@@ -1,25 +1,36 @@
 body {
-    font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
 }
 
-.block {
-    width: 30vw;
-    height: 30vw;
-    background-color: blanchedalmond;
+.columns {
+    /*column-count: 4;
+    column-width: 250px;*/
+    columns: 4 250px;
+    column-rule: 3px solid aqua;
+    column-gap: 8rem;
+}
+
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2 {
+    margin-top: 0;
+    background-color: brown;
+    color: whitesmoke;
     padding: 1rem;
+    break-inside: avoid;
 }
 
-.left {
-    float: left;
-    margin-right: 2rem;
+.columns .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
 }
 
-.right {
-    float: right;
-    margin-left: 2rem;
-}
-
-.clear {
-    clear: both;
+.nowrap {
+    white-space: nowrap;
 }
