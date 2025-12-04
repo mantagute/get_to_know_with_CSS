@@ -1,12 +1,11 @@
-body {
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    background: #663300;
-    color: rgb(255, 255, 255);
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.7em;
 }
 
-p{
-    color: rgba(255, 255, 255, 0.8);
+p {
+    font-size: 2rem;
+    width: 60ch;
 }
-
