@@ -49,12 +49,16 @@ nav {
     justify-content: space-evenly;
 }
 
-nav a, nav a:visited {
+nav :any-link {
     color: black;
 }
 
-nav a:hover, nav a:focus {
+nav :is(a:hover,a:focus) {
     color: hsla(0, 0%, 20%, 0.6);
+}
+
+nav a:active {
+    color: red;
 }
 
 main {
@@ -82,6 +86,11 @@ footer {
     align-items: center;
 }
 
+.card:target {
+    border: 2px solid rebeccapurple ;
+}
+
+
 .card figure {
     display: flex;
     flex-flow: column nowrap;
@@ -92,12 +101,26 @@ footer {
     border-radius: 50%;
 }
 
+.card img:not([alt]) {
+    border: 10px solid red;
+}
+
+.card:nth-child(even) {
+    background-color: papayawhip;
+}
+
 .card figcaption {
     font-weight: bolder;
     font-size: 2rem;
     margin: 1rem;
     text-align: center;
 }
+
+.card figcaption::before {
+    content: '✅';
+    display: block  ;
+}
+
 
 @media screen and (min-width: 576px){ 
     main {
